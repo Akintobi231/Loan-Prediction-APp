@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
-import pickle
+import joblib
 
 with open(r"rf_loan_status_pipeline","rb")  as model_file:
-    pipeline=pickle.load(model_file)
+    pipeline=joblib.load(model_file)
 
 st.title('Loan Approval Prediction')
 
