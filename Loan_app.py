@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-with open(r"C:\Users\HP\Downloads\rf_loan_status_pipeline","rb")  as model_file:
+with open(r"rf_loan_status_pipeline","rb")  as model_file:
     pipeline=pickle.load(model_file)
 
 st.title('Loan Approval Prediction')
